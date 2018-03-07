@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/GreekTravel">
+    <Resource auth="Container"
+              driverClassName="com.mysql.jdbc.Driver" 
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" 
+              initialSize="10" 
+              maxActive="15" 
+              maxIdle="15" 
+              maxWait="1000" 
+              minIdle="5" 
+              name="jdbc/greektraveldb" 
+              removeAbandoned="true" 
+              removeAbandonedTimeout="60" 
+              testOnBorrow="true" 
+              type="javax.sql.DataSource" 
+              url="jdbc:mysql://localhost:3306/greektraveldb?allowMultiQueries=true" 
+              username="root" 
+              password="ultras@7" 
+              validationInterval="34000" 
+              validationQuery="SELECT 1"/>
+</Context>

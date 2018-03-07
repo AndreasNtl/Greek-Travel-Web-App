@@ -1,0 +1,159 @@
+.mailbox {
+    position: relative;
+    background: #CCDDED;
+    border-radius: 0px 5px 0px 0px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.nav {
+    position: absolute;
+    top: 0px; bottom: 0px;
+    background: #EEE;
+    width: 10%;
+}
+
+.nav a {
+    display: block;
+    padding: 5px 10px;
+    color: #3D9FC4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav a.active {
+    background: #CCDDED;
+}
+
+.nav a:first-child {
+    margin: 10px 0px 10px;
+}
+
+.messages {
+    padding: 10px 10px 20px 110px;
+    width: 80%;
+    min-height: 300px;
+    height: auto;
+}
+
+/*.sidebar {
+    min-height: 300px;
+    height: auto;
+}*/
+
+.message {
+    clear: both;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px;
+    background: #bbd0e4;
+    border-radius: 5px;
+}
+
+.message1 {
+    clear: both;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px;
+    background: #bbd0e4;
+    border-radius: 5px;
+}
+
+.message2 {
+    clear: both;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px;
+    background: #bbd0e4;
+    border-radius: 5px;
+}
+
+.message3 {
+    clear: both;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px;
+    background: #bbd0e4;
+    border-radius: 5px;
+}
+
+.message1 .sender{
+    position: absolute;
+    left: 20px;
+    color: #000;
+    font-weight: bold;
+    width: 40%;
+}
+
+.message1 .delete{
+    display: block;
+    position: absolute;
+    left: -8px;
+    margin-top: -8px;
+}
+
+
+.message1 .delete .deleteImg{
+    width: 18px;
+}
+
+.message1 .date{
+    position: absolute;
+    right: 10px;
+}
+.message input {
+    position: absolute;
+    top: 8px; left: 10px;
+    width: 30px;
+}
+.message .left {
+    display: block;
+    position: absolute;
+    left: 20px;
+    color: #000;
+    font-weight: bold;
+    width: 80px;
+}
+
+.message .center {
+    display: inline-block;
+    padding-left: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+.message .sender {
+    display: block;
+    position: absolute;
+    left: 22px;
+    color: #000;
+    font-weight: bold;
+    width: 80px;
+}
+
+.message .delete{
+    display: block;
+    position: absolute;
+    left: -8px;
+    margin-top: -8px;
+}
+
+.message .delete .deleteImg{
+    width: 18px;
+}
+
+.message .title {
+    display: inline-block;
+    padding-left: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+.message .date {
+    position: absolute;
+    right: 10px;
+}
