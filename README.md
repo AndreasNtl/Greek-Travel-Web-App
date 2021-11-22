@@ -38,7 +38,7 @@ admin). Μέσω της μπάρας αυτής μπορεί να περιηγη
 
 Usernames/passwords ως εξής:
 
-user: admin pass: admin
-user: visitor1 pass: visitor1
-user: owner1 pass: owner1
-κ.ο.κ.
+user: admin pass: admin <br />
+user: visitor1 pass: visitor1 <br />
+user: owner1 pass: owner1 <br />
+κ.ο.κ. <br />
