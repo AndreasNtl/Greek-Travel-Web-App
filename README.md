@@ -1,44 +1,83 @@
-![Screenshot_1](https://user-images.githubusercontent.com/37142918/142828185-093680ec-a3d3-4711-842e-62c6171c6620.png)
+# 🌍 Greek Travel Web App
 
+A web-based travel booking platform developed using Java, JSP, and Servlets. This project follows the MVC (Model-View-Controller) design pattern and connects to a MySQL database to manage users, trips, and bookings.
 
-Για την υλοποίηση της εφαρμογής έχουν χρησιμοποιηθεί οι τεχνολογίες JSP για επικοινωνία
+---
 
-με την MySQL βάση, JSP Servlets για την εξυπηρέτηση των αιτημάτων της εφαρμογής και
+## ✨ Features
+- User registration and login
+- Browse trips and accommodations
+- Booking system for users
+- Admin panel for managing listings and content
 
-το περιβάλλον ανάπτυξης εφαρμογών του NetBeans.
+---
 
-Έχουν υλοποιηθεί όλα τα ζητούμενα της εκφώνησης με τις εξής λεπτομέρειες:
+## 🛠️ Technologies Used
+- Java
+- JSP & Servlets
+- MySQL
+- HTML, CSS, JavaScript (with jQuery UI)
+- Apache Tomcat (recommended application server)
 
-&nbsp;1) Εμφανίζουμε τα recommendations στην σελίδα καλωσορίσματος, στο κάτω μέρος.
+---
 
-&nbsp;2) Τα recommendations αυτά δημιουργούνται με βάση των ζητουμένων 9) και 10),
-δηλαδή χρησιμοποιούν τους αλγορίθμους Nearest Neighbour Collaborative Filtering
-καθώς επίσης για την αντιμετώπιση του data sparsity, καταγράφονται στην βάση μας
-και χρησιμοποιούνται από τον αλγόριθμο οι αναζητήσεις του κάθε χρήστη
-(συγκεκριμένα, το πότε ο κάθε χρήστης δείχνει ενδιαφέρον σε συγκεκριμένα δωμάτια,
-μπαίνοντας στην σχετική σελίδα λεπτομερειών του). Επίσης, στα παραδοτέα έχουμε
-συμπεριλάβει ένα .ods αρχείο που αποτυπώνει την εικόνα της βάσης σχετικά με τα
-views και rates των χρηστών για βοεπαλήθευση του αλγορίθμου.
+## 📁 Project Structure
+```
+Greek-Travel-Web-App/
+├── java/                 # Java source code (controllers, models, DAOs)
+├── web/                  # Web resources
+│   ├── css/              # Stylesheets
+│   ├── js/               # JavaScript files
+│   ├── jqueryui/         # jQuery UI assets
+│   ├── WEB-INF/          # web.xml and JSPs
+│   └── META-INF/         # Metadata
+├── greektravel.mwb       # MySQL Workbench schema
+├── README.md             # Project documentation
+```
 
-&nbsp;3) Όλες οι αιτήσεις HTTP είναι κρυπτογραφημένες μέσω του πρωτοκόλλου SSL/TLS.
+---
 
-&nbsp;4) Σε όλες τις σελίδες τις εφαρμογής, περιέχεται στο πάνω μέρος μια μπάρα η οποία
-δυναμικά προσαρμόζεται στις ανάγκες του κάθε χρήστη (guest, visitor, owner και
-admin). Μέσω της μπάρας αυτής μπορεί να περιηγηθεί ο κάθε χρήστης της
-εφαρμογής σε όλες τις επιλογές που ζητάει η εκφώνηση, ανάλογα με τον ρόλο που
-διακατέχει στην εφαρμογή.
+## 🧰 Prerequisites
+- Java JDK 8 or later
+- Apache Tomcat 9 or later
+- MySQL Server
+- Maven or IntelliJ IDEA (recommended)
 
-&nbsp;5) Κατά την διάρκεια ανάπτυξης της εφαρμογής υλοποιήθηκε και εφαρμόστηκε
-αποτελεσματικά η διαδικασία της κρυπτογράφησης των κωδικών των χρηστών κατά
-την εισαγωγή τους στη βάση μας αλλά και στην διαδικασία ελέγχου κατά την είσοδο.
+---
 
-Παρ’όλα αυτά για λόγους διευκόλυνσης, επιλέξαμε να κρατήσουμε απενεργοποιημένη την συγκεκριμένη μέθοδο καθώς στο δείγμα βάσης που
-δημιουργήσαμε χρησιμοποιούμε κωδικούς χωρίς κάποια επεξεργασία.
-Η βάση μας περιέχει 71 χρήστες στο σύνολο, 50 ενοικιαστές, 20 οικοδεσπότες, 1 admin.
+## 🗄️ Database Setup
+1. Open `greektravel.mwb` using MySQL Workbench.
+2. Export or run the schema to generate the required tables.
+3. Update database credentials in the appropriate DAO or utility class (typically inside the `jpautils` or `dao` packages).
 
-Usernames/passwords ως εξής:
+---
 
-user: admin pass: admin <br />
-user: visitor1 pass: visitor1 <br />
-user: owner1 pass: owner1 <br />
-κ.ο.κ. <br />
+## ▶️ How to Run the Application
+
+### Option 1: Run with IntelliJ IDEA
+1. Open the project as a Maven or standard Java project.
+2. Configure a new Tomcat Server: `Run > Edit Configurations > Add New Configuration > Tomcat Server`.
+3. Set the deployment to use `war exploded` from the `web` folder.
+4. Start the Tomcat configuration.
+5. Open a browser and go to `http://localhost:8080`.
+
+### Option 2: Manual Deployment to Tomcat
+1. Package the project to generate a `.war` file.
+2. Copy the `.war` file into the `webapps/` directory of your Tomcat installation.
+3. Start the Tomcat server.
+4. Access the app via `http://localhost:8080/Greek-Travel-Web-App`.
+
+---
+
+## 🔐 Demo Credentials *(if applicable)*
+> Add default login credentials here (e.g., admin/admin123).
+
+---
+
+## 👨‍💻 Author
+This project was originally written in Greek. English README and refactoring provided on request.
+
+---
+
+## 🤝 Contributions
+Contributions and suggestions are welcome! Feel free to open issues or submit pull requests to improve the project.
